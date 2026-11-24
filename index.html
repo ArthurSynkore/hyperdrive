@@ -121,46 +121,47 @@ footer{border-top:1px solid var(--line);padding:20px var(--gut) 26px;display:fle
     </div></div>
 
     <div class="cap" data-a=".15" data-b=".31"><div class="in">
-      <p class="step">Avant</p>
-      <h2>Votre équipe fait tout <em>à la main.</em></h2>
-      <p class="sub">Ça avance. Mais lentement.</p>
+      <p class="step">Aujourd'hui</p>
+      <h2>Votre valeur est <em>noyée</em> dans le reste.</h2>
+      <p class="sub">Vos meilleurs talents passent leurs journées sur ce qui ne vous rend pas unique.</p>
     </div></div>
 
     <div class="cap" data-a=".345" data-b=".49"><div class="in">
-      <p class="step">Allumage</p>
-      <h2>On branche les <em>propulseurs.</em></h2>
-      <p class="sub">Des systèmes IA construits pour vos process, un par un.</p>
+      <p class="step">L'IA prend le reste</p>
+      <h2>Le répétitif tourne <em>tout seul.</em></h2>
+      <p class="sub">Administratif, relances, coordination. Ce qui n'est pas votre valeur, l'IA s'en charge.</p>
     </div></div>
 
     <div class="cap" data-a=".53" data-b=".635"><div class="in">
-      <p class="step">Les moteurs</p>
-      <h2>Ce qui prenait des heures <em>prend des secondes.</em></h2>
+      <p class="step">Votre valeur</p>
+      <h2>Ce qui vous rend unique <em>ressort.</em></h2>
+      <p class="sub">On ne remplace pas vos talents. On les propulse.</p>
     </div></div>
 
     <div class="cap" data-a=".665" data-b=".765"><div class="in">
-      <p class="step">Ensemble</p>
-      <h2>Tout tourne <em>en même temps.</em></h2>
-      <p class="sub">Votre équipe se concentre sur ce qui rapporte.</p>
+      <p class="step">Sur-mesure</p>
+      <h2>Un système construit <em>autour de vous.</em></h2>
+      <p class="sub">Une marque qui ne pense plus qu'à son contenu. Une agence qui prospecte, livre et facture au même endroit.</p>
     </div></div>
 
     <div class="cap mid" data-z="1" data-a=".838" data-b=".955"><div class="in">
       <h2 class="big">Hyperdrive.</h2>
-      <p class="sub">Votre entreprise, à pleine vitesse.</p>
+      <p class="sub">Votre valeur, à pleine vitesse.</p>
     </div></div>
 
     <div class="cap mid" data-a=".962" data-b="2"><div class="in">
       <h2>Prêt à <em>accélérer ?</em></h2>
-      <p class="sub">Un appel pour choisir les premiers propulseurs à installer.</p>
+      <p class="sub">Un appel pour voir ce qui fait votre valeur, et comment la propulser.</p>
       <a class="btn" id="book" href="#contact">Réserver un appel <span class="ar">→</span></a>
       <p class="note" id="book-note" role="status"></p>
     </div></div>
 
     <nav class="rail" aria-label="Étapes">
       <button type="button" id="r0" data-p="0" aria-label="Début"></button>
-      <button type="button" id="r1" data-p=".23" aria-label="Avant"></button>
-      <button type="button" id="r2" data-p=".42" aria-label="Allumage"></button>
-      <button type="button" id="r3" data-p=".6" aria-label="Les moteurs"></button>
-      <button type="button" id="r4" data-p=".715" aria-label="Ensemble"></button>
+      <button type="button" id="r1" data-p=".23" aria-label="Aujourd'hui"></button>
+      <button type="button" id="r2" data-p=".42" aria-label="L'IA prend le reste"></button>
+      <button type="button" id="r3" data-p=".6" aria-label="Votre valeur"></button>
+      <button type="button" id="r4" data-p=".715" aria-label="Sur-mesure"></button>
       <button type="button" id="r5" data-p=".9" aria-label="Hyperdrive"></button>
       <button type="button" id="r6" data-p="1" aria-label="Réserver un appel"></button>
     </nav>
@@ -183,7 +184,7 @@ var gal=document.createElement('canvas'),galX=0,galY=0,cv=document.getElementByI
 var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
 var W=0,H=0,D=1,mob=false,P=[],bgS=[];
 var ps=0,off=0,rot=0,wt=0,tm=0,mx=.5,my=.5,smx=.5,smy=.5;
-var R=Math.random,HL=['DEVIS · 2 MIN','RELANCES · AUTOMATIQUES','REPORTING · EN DIRECT'];
+var R=Math.random,HL=['VOTRE SAVOIR-FAIRE','VOS CLIENTS','VOTRE PRODUIT'];
 function rnd(a,b){return a+R()*(b-a)}
 function gauss(){return (R()+R()+R()+R()-2)/2}
 function ss(a,b,x){x=(x-a)/(b-a);x=x<0?0:x>1?1:x;return x*x*(3-2*x)}
@@ -314,7 +315,7 @@ function draw(dt){
     ctx.fillStyle='rgba(255,190,150,.95)';ctx.fillRect(scanX-1,0,2,H);
     ctx.font='500 11px "JetBrains Mono",monospace';ctx.fillStyle='rgba(255,190,150,.95)';
     ctx.textAlign=scanX>W-120?'right':'left';
-    ctx.fillText('ALLUMAGE · '+Math.round(scan*100)+' %',scanX+(scanX>W-120?-10:10),mob?H*.5:84);
+    ctx.fillText('IA · '+Math.round(scan*100)+' % DU RÉPÉTITIF',scanX+(scanX>W-120?-10:10),mob?H*.5:84);
   }
   if(hotA>.01){
     ctx.lineWidth=1;ctx.font='500 10px "JetBrains Mono",monospace';ctx.textAlign='center';
