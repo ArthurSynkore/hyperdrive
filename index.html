@@ -58,7 +58,7 @@ h1 em,h2 em{font-style:italic;background:var(--grad);-webkit-background-clip:tex
 .hero{max-width:min(900px,100%)}
 .hero .kick{font-family:var(--f-mono);font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin:0 0 26px;animation:arrive 1.4s ease both .1s}
 .hero h1{font-size:clamp(2.5rem,6.1vw,5.7rem);line-height:1.02;max-width:21ch;animation:arrive 1.8s cubic-bezier(.16,.84,.24,1) both .25s}
-.hero .then{margin:26px 0 0;font-size:clamp(1.15rem,1.9vw,1.55rem);color:var(--ink);max-width:30ch;animation:arrive 1.6s ease both 2.9s}
+.hero .then{margin:26px 0 0;font-size:clamp(1.15rem,1.9vw,1.55rem);color:var(--ink);max-width:30ch;animation:arrive 1.6s ease both 1s}
 .days{display:flex;gap:6px;margin:38px 0 0;max-width:520px;animation:arrive 1s ease both .9s}
 .days span{flex:1;font-family:var(--f-mono);font-size:.66rem;letter-spacing:.1em;color:var(--muted);padding-top:10px;position:relative}
 .days span::before,.days span::after{content:"";position:absolute;left:0;top:0;height:2px;width:100%;background:var(--line)}
@@ -106,7 +106,7 @@ footer{border-top:1px solid var(--line);padding:20px var(--gut) 26px;display:fle
 <body>
 <header>
   <a class="logo" href="#top" aria-label="Hyperdrive, haut de page"><i></i>Hyperdrive</a>
-  <a class="pill" href="#contact">Audit offert</a>
+  <a class="pill" href="#contact">Réserver un appel</a>
 </header>
 
 <main id="top" class="journey">
@@ -115,32 +115,32 @@ footer{border-top:1px solid var(--line);padding:20px var(--gut) 26px;display:fle
     <div class="blob a" aria-hidden="true"></div><div class="blob b" aria-hidden="true"></div>
 
     <div class="cap first hero" data-a="-1" data-b=".11"><div class="in">
-      <p class="kick">IA sur-mesure pour les entreprises</p>
-      <h1>En <em>7 jours,</em> vous savez exactement ce qui ralentit votre entreprise.</h1>
-      <div class="days" aria-hidden="true"><span style="--n:0">J1</span><span style="--n:1">J2</span><span style="--n:2">J3</span><span style="--n:3">J4</span><span style="--n:4">J5</span><span style="--n:5">J6</span><span style="--n:6">J7</span></div>
-      <p class="then">Ensuite, on construit l'IA qui le règle.</p>
+      <p class="kick">Systèmes IA sur-mesure</p>
+      <h1>On installe les <em>propulseurs</em> de votre entreprise.</h1>
+      <p class="then">Ce qui vous ralentit tourne tout seul. Vous, vous accélérez.</p>
     </div></div>
 
     <div class="cap" data-a=".15" data-b=".31"><div class="in">
-      <h2>Voici <em>votre entreprise.</em></h2>
-      <p class="sub">Chaque point est un email, une réunion, une tâche.</p>
+      <p class="step">Avant</p>
+      <h2>Votre équipe fait tout <em>à la main.</em></h2>
+      <p class="sub">Ça avance. Mais lentement.</p>
     </div></div>
 
     <div class="cap" data-a=".345" data-b=".49"><div class="in">
-      <p class="step">Étape 1 · 7 jours</p>
-      <h2>Notre IA <em>observe tout.</em></h2>
-      <p class="sub">Elle se branche à vos outils. Vous fixez les limites.</p>
+      <p class="step">Allumage</p>
+      <h2>On branche les <em>propulseurs.</em></h2>
+      <p class="sub">Des systèmes IA construits pour vos process, un par un.</p>
     </div></div>
 
     <div class="cap" data-a=".53" data-b=".635"><div class="in">
-      <p class="step">Étape 2 · L'audit</p>
-      <h2>Elle trouve où vous perdez <em>du temps et de l'argent.</em></h2>
+      <p class="step">Les moteurs</p>
+      <h2>Ce qui prenait des heures <em>prend des secondes.</em></h2>
     </div></div>
 
     <div class="cap" data-a=".665" data-b=".765"><div class="in">
-      <p class="step">Étape 3 · Le système</p>
-      <h2>On construit l'IA qui <em>règle ça.</em></h2>
-      <p class="sub">Sur-mesure. Améliorée chaque semaine.</p>
+      <p class="step">Ensemble</p>
+      <h2>Tout tourne <em>en même temps.</em></h2>
+      <p class="sub">Votre équipe se concentre sur ce qui rapporte.</p>
     </div></div>
 
     <div class="cap mid" data-z="1" data-a=".838" data-b=".955"><div class="in">
@@ -149,21 +149,20 @@ footer{border-top:1px solid var(--line);padding:20px var(--gut) 26px;display:fle
     </div></div>
 
     <div class="cap mid" data-a=".962" data-b="2"><div class="in">
-      <p class="step">Audit offert</p>
-      <h2>On regarde <em>la vôtre ?</em></h2>
-      <p class="sub">Vous repartez en sachant ce qui vous ralentit le plus.</p>
-      <a class="btn" id="book" href="#contact">Réserver mon audit <span class="ar">→</span></a>
+      <h2>Prêt à <em>accélérer ?</em></h2>
+      <p class="sub">Un appel pour choisir les premiers propulseurs à installer.</p>
+      <a class="btn" id="book" href="#contact">Réserver un appel <span class="ar">→</span></a>
       <p class="note" id="book-note" role="status"></p>
     </div></div>
 
     <nav class="rail" aria-label="Étapes">
       <button type="button" id="r0" data-p="0" aria-label="Début"></button>
-      <button type="button" id="r1" data-p=".23" aria-label="Votre entreprise"></button>
-      <button type="button" id="r2" data-p=".42" aria-label="Étape 1"></button>
-      <button type="button" id="r3" data-p=".6" aria-label="Étape 2"></button>
-      <button type="button" id="r4" data-p=".715" aria-label="Étape 3"></button>
+      <button type="button" id="r1" data-p=".23" aria-label="Avant"></button>
+      <button type="button" id="r2" data-p=".42" aria-label="Allumage"></button>
+      <button type="button" id="r3" data-p=".6" aria-label="Les moteurs"></button>
+      <button type="button" id="r4" data-p=".715" aria-label="Ensemble"></button>
       <button type="button" id="r5" data-p=".9" aria-label="Hyperdrive"></button>
-      <button type="button" id="r6" data-p="1" aria-label="Audit offert"></button>
+      <button type="button" id="r6" data-p="1" aria-label="Réserver un appel"></button>
     </nav>
 
     <div class="hud" aria-hidden="true">
@@ -184,7 +183,7 @@ var gal=document.createElement('canvas'),galX=0,galY=0,cv=document.getElementByI
 var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
 var W=0,H=0,D=1,mob=false,P=[],bgS=[];
 var ps=0,off=0,rot=0,wt=0,tm=0,mx=.5,my=.5,smx=.5,smy=.5;
-var R=Math.random,HL=['DEVIS REFAITS À LA MAIN','RELANCES OUBLIÉES','INFOS ÉPARPILLÉES'];
+var R=Math.random,HL=['DEVIS · 2 MIN','RELANCES · AUTOMATIQUES','REPORTING · EN DIRECT'];
 function rnd(a,b){return a+R()*(b-a)}
 function gauss(){return (R()+R()+R()+R()-2)/2}
 function ss(a,b,x){x=(x-a)/(b-a);x=x<0?0:x>1?1:x;return x*x*(3-2*x)}
@@ -315,7 +314,7 @@ function draw(dt){
     ctx.fillStyle='rgba(255,190,150,.95)';ctx.fillRect(scanX-1,0,2,H);
     ctx.font='500 11px "JetBrains Mono",monospace';ctx.fillStyle='rgba(255,190,150,.95)';
     ctx.textAlign=scanX>W-120?'right':'left';
-    ctx.fillText('IONIC DATA · JOUR '+Math.min(7,1+Math.floor(scan*7))+' / 7',scanX+(scanX>W-120?-10:10),mob?H*.5:84);
+    ctx.fillText('ALLUMAGE · '+Math.round(scan*100)+' %',scanX+(scanX>W-120?-10:10),mob?H*.5:84);
   }
   if(hotA>.01){
     ctx.lineWidth=1;ctx.font='500 10px "JetBrains Mono",monospace';ctx.textAlign='center';
@@ -333,7 +332,7 @@ function draw(dt){
     fg.addColorStop(0,'rgba(255,255,255,'+(.95*fl)+')');fg.addColorStop(.3,'rgba(255,200,220,'+(.45*fl)+')');fg.addColorStop(1,'rgba(201,139,255,0)');
     ctx.fillStyle=fg;ctx.fillRect(0,0,W,H);
   }
-  return {tGal:tGal,tWarp:tWarp,tCh:tCh};
+  return {tGal:tGal,tWarp:tWarp,tCh:tCh,sc:scan,tc:tCap};
 }
 
 /* captions, rail, hud */
@@ -352,7 +351,7 @@ function ui(st){
   }
   var ri=0;for(var k=0;k<railP.length;k++)if(ps>=railP[k]-.06)ri=k;
   if(ri!==lastR){for(k=0;k<rails.length;k++)rails[k].classList.toggle('on',k===ri);lastR=ri}
-  var val=1+2.9*st.tGal+5.9*st.tCh,s=st.tWarp>.6?'lumière':'×'+val.toFixed(1);
+  var val=1-.6*ss(.12,.26,ps)+.9*st.sc+.8*st.tc+1.8*st.tGal+5.9*st.tCh,s=st.tWarp>.6?'lumière':'×'+val.toFixed(1);
   if(s!==lastS){spd.textContent=s;lastS=s}
   gauge.style.transform='scaleX('+Math.min(val/10,1).toFixed(3)+')';
   hint.style.opacity=(1-ss(.01,.05,ps)).toFixed(2);
