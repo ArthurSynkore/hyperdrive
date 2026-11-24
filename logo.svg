@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="216 31 1736 1514" width="1736" height="1514">
+  <g fill="#000">
+    <!-- arc haut -->
+    <path d="M494 494 A670.5 670.5 0 0 1 1674 494" fill="none" stroke="#000" stroke-width="102" stroke-linecap="round"/>
+    <!-- arc bas -->
+    <path d="M629 1270 A713.2 713.2 0 0 0 1539 1270" fill="none" stroke="#000" stroke-width="102" stroke-linecap="round"/>
+    <!-- petits cercles haut -->
+    <circle cx="494" cy="494" r="129"/>
+    <circle cx="1674" cy="494" r="129"/>
+    <!-- grands cercles -->
+    <circle cx="533" cy="903" r="257"/>
+    <circle cx="1635" cy="903" r="257"/>
+    <!-- petits cercles bas -->
+    <circle cx="629" cy="1270" r="104"/>
+    <circle cx="1539" cy="1270" r="104"/>
+  </g>
+</svg>

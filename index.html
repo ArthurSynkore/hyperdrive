@@ -4,6 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Hyperdrive</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="theme-color" content="#0b0618">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -29,9 +32,8 @@ a{color:inherit}
 
 header{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px var(--gut);background:linear-gradient(var(--bg),transparent)}
 .logo{display:flex;align-items:center;gap:10px;font-family:var(--f-display);text-transform:uppercase;letter-spacing:.2em;font-size:1.15rem;text-decoration:none}
-.logo i{display:block;width:26px;height:10px;position:relative}
-.logo i::before,.logo i::after{content:"";position:absolute;right:0;height:2px;border-radius:2px}
-.logo i::before{top:1px;width:100%;background:var(--ember)}.logo i::after{bottom:1px;width:58%;background:var(--ink)}
+.logo .mark{display:block;width:30px;height:auto;flex:none}
+footer .fmark{display:inline-flex;align-items:center;gap:8px}footer .fmark .mark{width:18px;height:auto}
 .pill{font-family:var(--f-mono);font-size:.74rem;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;padding:10px 16px;border:1px solid var(--line);border-radius:999px;background:var(--panel);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);transition:border-color .3s,background .3s}
 .pill:hover{border-color:var(--ember);background:rgba(255,148,102,.12)}
 
@@ -105,7 +107,7 @@ footer{border-top:1px solid var(--line);padding:20px var(--gut) 26px;display:fle
 </head>
 <body>
 <header>
-  <a class="logo" href="#top" aria-label="Hyperdrive, haut de page"><i></i>Hyperdrive</a>
+  <a class="logo" href="#top" aria-label="Hyperdrive, haut de page"><svg class="mark" viewBox="216 31 1736 1514" aria-hidden="true"><g fill="currentColor"><path d="M494 494 A670.5 670.5 0 0 1 1674 494" fill="none" stroke="currentColor" stroke-width="102" stroke-linecap="round"/><path d="M629 1270 A713.2 713.2 0 0 0 1539 1270" fill="none" stroke="currentColor" stroke-width="102" stroke-linecap="round"/><circle cx="494" cy="494" r="129"/><circle cx="1674" cy="494" r="129"/><circle cx="533" cy="903" r="257"/><circle cx="1635" cy="903" r="257"/><circle cx="629" cy="1270" r="104"/><circle cx="1539" cy="1270" r="104"/></g></svg>Hyperdrive</a>
   <a class="pill" href="#contact">Réserver un appel</a>
 </header>
 
@@ -174,7 +176,7 @@ footer{border-top:1px solid var(--line);padding:20px var(--gut) 26px;display:fle
   <span id="contact"></span>
 </main>
 
-<footer><span>© 2026 Hyperdrive</span><span>Croissance &amp; IA sur-mesure</span></footer>
+<footer><span class="fmark"><svg class="mark" viewBox="216 31 1736 1514" aria-hidden="true"><g fill="currentColor"><path d="M494 494 A670.5 670.5 0 0 1 1674 494" fill="none" stroke="currentColor" stroke-width="102" stroke-linecap="round"/><path d="M629 1270 A713.2 713.2 0 0 0 1539 1270" fill="none" stroke="currentColor" stroke-width="102" stroke-linecap="round"/><circle cx="494" cy="494" r="129"/><circle cx="1674" cy="494" r="129"/><circle cx="533" cy="903" r="257"/><circle cx="1635" cy="903" r="257"/><circle cx="629" cy="1270" r="104"/><circle cx="1539" cy="1270" r="104"/></g></svg>© 2026 Hyperdrive</span><span>Croissance &amp; IA sur-mesure</span></footer>
 
 <script>
 (function(){
